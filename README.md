@@ -61,9 +61,8 @@ That’s literally it.
 ---
 
 ## 🎇 Demo
-
-_Add a GIF or screenshot here to show off the sparkles!_
-
+Here’s what the Fireworks app looks like in action:
+![Fireworks Demo](./assets/fireworks.gif)
 ---
 
 ## 🧪 Features
