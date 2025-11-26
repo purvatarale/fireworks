@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+h1,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+canvas {
+  cursor: pointer;
+  position: absolute;
+}
