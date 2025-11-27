@@ -28,23 +28,64 @@ p {
 }
 
 h1 {
-font-family: "Pacifico", cursive;
+  font-family: "Pacifico", cursive;
   z-index: 2;
-  text-transform: uppercase;
   font-size: 6vw;
   padding: 0 1rem;
+  text-transform: uppercase;
+
   background-image: linear-gradient(
-    to right top,
-    #ffff34,
-    #ffc812,
-    #ff8f2f,
-    #e44d2e,
-    #9e1b32
+    90deg,
+    #fff8d6,
+    #ffe483,
+    #ffbc6f,
+    #ff8f83,
+    #ff5f8d,
+    #c43b7d
   );
-  background-size: 50% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: gradientAnimation 7.5s ease alternate infinite;
+
+  text-shadow: 0 0 10px rgba(255, 200, 80, 0.4),
+    0 0 20px rgba(255, 120, 80, 0.3), 0 0 35px rgba(255, 80, 120, 0.2);
+
+  animation: blinkSoft 2.5s ease-in-out infinite;
+}
+
+@keyframes blinkSoft {
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 10px rgba(255, 200, 80, 0.4);
+  }
+  50% {
+    opacity: 0.55;
+    text-shadow: 0 0 4px rgba(255, 200, 80, 0.15);
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 10px rgba(255, 200, 80, 0.4);
+  }
+}
+
+@keyframes glowPulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.92;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
 }
 
 @keyframes gradientAnimation {

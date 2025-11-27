@@ -14,9 +14,13 @@
 
   const drawBackground = () => {
     const gradient = context.createRadialGradient(0, 0, height, 0, 0, width);
-    gradient.addColorStop(0, "#002D62");
-    gradient.addColorStop(0.5, "#0066b2");
-    gradient.addColorStop(1, "#6699CC");
+    // gradient.addColorStop(0, "#002D62");
+    // gradient.addColorStop(0.5, "#0066b2");
+    // gradient.addColorStop(1, "#6699CC");
+    gradient.addColorStop(0, "#0a0f2c");
+    gradient.addColorStop(0.5, "#152059");
+    gradient.addColorStop(1, "#09203f");
+
     context.fillStyle = gradient;
     context.fillRect(0, 0, width, height);
   };
